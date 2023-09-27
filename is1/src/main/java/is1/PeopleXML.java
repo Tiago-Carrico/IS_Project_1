@@ -151,7 +151,7 @@ public class PeopleXML {
             long timeElapsedUnMarshalling = finish - start;
 
             //Write results to file (filename, marshall time, unmarshall time)
-            File results = new File("is1\\src\\results\\" + newFilename + ".txt");
+            File results = new File("is1\\src\\results\\" + newFilename + "XML.txt");
             try {
                 results.createNewFile();
             } catch (IOException e) {

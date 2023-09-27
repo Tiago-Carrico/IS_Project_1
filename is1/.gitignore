@@ -1,0 +1,4 @@
+*.txt
+*.proto
+*.xml
+!people.proto
