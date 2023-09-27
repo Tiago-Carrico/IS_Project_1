@@ -1,0 +1,2 @@
+First names: https://github.com/dominictarr/random-name/blob/master/first-names.txt
+Last names: https://github.com/arineng/arincli/blob/master/lib/last-names.txt

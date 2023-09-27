@@ -1,0 +1,23 @@
+syntax = "proto2";
+package is1;
+
+option java_multiple_files = true;
+option java_package = "is1.protomodel";
+option java_outer_classname = "PeopleProto";
+
+message People{
+    required int32 id = 1;
+    required string orgName = 2;
+    repeated Person peopleList = 3;
+}
+
+message Person{
+    required int32 id = 1;
+    required string name = 2;
+    required string email = 3;
+}
+
+//To run, on the is1 directory:
+//protoc  --java_out=. people.proto
+//and then change the protomodel folder into the first is1 one
+//don't ask me why it makes a new is1 folder
