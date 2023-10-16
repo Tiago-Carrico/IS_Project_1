@@ -176,45 +176,8 @@ public class PeopleXML {
 
     public static void main(String[] args){
         //To test all files in the test case folder, there is cross contamination as the first file marshalled probably saves stuff in the RAM and is slower than it should/the others are faster than they should
-        testAll();
+        //testAll();
         //to test just one so it shows values without errors
         testOne("testData100000.txt");
     }
 }
-
-
-            //Example of Person object creation
-            /*
-            Person o = new Person();
-            o.setId(1);
-            o.setName("Banana");
-            o.setEmail("hehe@gmail.com");
-            o.setBirthDate(ZonedDateTime.parse("2016-10-05T08:20:10+05:30[Asia/Kolkata]"));
-            */
-
-            //only here to test people class marshalling, comment or remove later
-            //Confirmed the People object is created well
-            /*
-            People testP = new People(1, "testOrg");
-            testP.addPeopleList(new Person(0, "Tiago", "mail@gmail.com"));
-            testP.addPeopleList(new Person(1, "Marco", "marco@hotmail.com"));
-            testP.addPeopleList(new Person(2, "Tatiana", "tatiana@yahoo.com"));
-            System.out.println(testP);
-            */
-        
-            //Works and People object is created sucessfully
-            /*
-            //TODO only here to test reading the file into the People Object
-            People testP = new People(1, "testOrg");
-            //TODO has most of the dir but put way to change the text file name while on a loop later
-            readFile.readPeopleFile("is1\\DataGenerator\\testDataFolder\\testData50.txt", testP);
-            System.out.println(testP);
-            */
-            
-            //Keeps all file names in the testDataFolder in a File array 
-            /* 
-            File[] files = new File("C:\\Users\\ferre\\Documents\\Uni\\IS\\Assignment1\\is1\\DataGenerator\\testDataFolder").listFiles();
-            for(File filename: files){
-                System.out.println(filename.getName());
-            }
-            */

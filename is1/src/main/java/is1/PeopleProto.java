@@ -209,7 +209,7 @@ public class PeopleProto {
 
     public static void main(String[] args){
         //To test all files in the test case folder, there is cross contamination as the first file marshalled probably saves stuff in the RAM and is slower than it should/the others are faster than they should
-        testAll();
+        //testAll();
         //to test just one so it shows values without errors
         try {
             testOne("testData100000.txt");

@@ -3,6 +3,8 @@ package is1;
 import java.io.File;
 
 import is1.models.People;
+import jakarta.xml.bind.JAXBException;
+
 
 /**
  * Hello world!
@@ -13,14 +15,17 @@ public class App
     public static void main( String[] args )
     {
 
-        //TODO remove later, for reading file testing purposes
-        People testP = new People(1, "testOrg");
+        //Hotkey to run is ctrl+alt+k
 
-        //readFile.readPeopleFile("C:\\Users\\ferre\\Documents\\Uni\\IS\\Assignment1\\is1\\DataGenerator\\testDataFolder\\testData50.txt", testP);
+        String file = "testData5000000.txt";
 
-        File[] files = new File("C:\\Users\\ferre\\Documents\\Uni\\IS\\Assignment1\\is1\\DataGenerator\\testDataFolder").listFiles();
-        for(File filename: files){
-            System.out.println(filename.getName());
+        try {
+            PeopleProto.testOne(file);
+            PeopleXML.testOne(file);
+        } catch (JAXBException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
+        
     }
 }
